@@ -25,9 +25,6 @@ let timeout;
 
 var audio = new Audio('backGroundSong.mp3');
 audio.play();
-const inter = setInterval(() =>  {
-    audio.play();
-}, 120000);
 
 window.addEventListener("keydown", changeDirection);
 res.addEventListener("click", resetGame);
