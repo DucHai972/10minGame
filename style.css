@@ -1,0 +1,23 @@
+#gameContainer  {
+    text-align: center;
+}
+
+#gameBoard  {
+    border: 3px solid black;
+}
+
+#currScore  {
+    font-family: cursive;
+    font-size: 100px;
+}
+
+#res  {
+    font-family: cursive;
+    font-size: 22px;
+    height: 50px;
+    border: none;
+    background-color: rgb(106, 30, 30);
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
