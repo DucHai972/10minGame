@@ -21,3 +21,16 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
+#mus  {
+    position: fixed;
+    right: 300px;
+    top: 200px;
+    font-family: cursive;
+    font-size: 22px;
+    border: none;
+    color: #fff;
+    background-color: rgb(106, 30, 30);
+    border-radius: 15px;
+    cursor: pointer;
+}
