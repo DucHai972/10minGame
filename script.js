@@ -2,6 +2,7 @@ const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
 const score = document.querySelector("#currScore");
 const res = document.querySelector("#res");
+const mus = document.querySelector("#mus");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
 const enemyColor = "red";
@@ -24,7 +25,9 @@ let pY = gameHeight-10;
 let timeout;
 
 var audio = new Audio('backGroundSong.mp3');
-audio.play();
+mus.addEventListener("click", () =>  {
+    audio.play();
+});
 
 window.addEventListener("keydown", changeDirection);
 res.addEventListener("click", resetGame);
@@ -132,7 +135,7 @@ function resetGame(){
     eV = 5;
     currScore = 0;
     createEnemy();
-
+    audio.play();
     clearInterval(timeout);
     gameStart();
 };
